@@ -17,7 +17,7 @@ function formValidator(){
             errorPara[0].innerText = 'Enter your correct name'
         }
 
-        if(isNaN(inputs[1].value)){
+        if(inputs[1].value.match(letters)){
            errorPara[1].innerText = 'Wrong format, numbers only'
         }if(inputs[1].value === ''){
             errorPara[1].innerText = `Can't be blank`
