@@ -56,6 +56,7 @@ inputs[1].addEventListener('input', function (e) {
     e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
 })
 
+// CLEARING INPUT SECTION AFTER LOAD
 function clearInput(){
    inputs[0].value = ''
    inputs[1].value = ''

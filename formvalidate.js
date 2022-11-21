@@ -61,7 +61,7 @@ function completeForm(){
          <img src="images/icon-complete.svg">
          <h1>THANK YOU</h1>
          <h3>We've added your card details!</h3>
-         <button>Continue</button>
+         <button class="continue">Continue</button>
       </div>
     `
 }

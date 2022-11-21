@@ -282,6 +282,14 @@ label[for="cvc"]{
     input:hover{
         cursor:pointer;
     }
+    .completed-msg{
+        position: relative;
+        left:-100px;
+        top:-50px;
+    }
+    .completed-msg button{
+        margin-top: 3em;
+    }
     /* input:focus{
         border:  1px solid;
        border-image:  var(--primary-linear-gradient);
