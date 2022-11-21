@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card-components">
+      <div class="backCard-component">
+        <img src="images/bg-card-back.png" alt="Back Of Card" class="card-back">
+        <span class="cvc-num" data-cvc>xxx</span>
+      </div>
+
+      <div class="frontCard-component">
+        <img src="images/bg-card-front.png" alt="Front Of Card" class="card-front">
+        <img src="images/card-logo.svg" alt="Card Logo" class="card-logo">
+        <h2 data-cardNumber>xxxx xxxx xxxx xxxx</h2>
+        <div class="user-details">
+          <h3 class="user-name" data-userName>--------------------</h3>
+          <p class="exp-date"><span id="expMonth">00</span>/<span id="expYear">00</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-components">
+      <form>
+        <label for="fullName">Cardholder Name</label>
+        <input
+          type="text" 
+          id="fullName"
+          name="fullName"
+          placeholder="e.g. Jane Appleseed"
+        >
+        <p class="invalid"></p>
+
+        <label fpr="cardNumber">Card Number</label>
+        <input
+         type="tel"
+         maxlength="19"
+         placeholder="e.g. 1234 5678 9123 0000"
+        >
+        <p class="invalid"></p>
+
+        <div class="num-details">
+          <label for="expDate">Exp. Date (MM/YY)</label>
+          <label for="cvc">CVC</label>
+
+          <div class="grid-input">
+            <input type="text"
+              id="expDate-month"
+              maxlength="2"
+              placeholder="MM"
+            >
+ 
+           <input type="text"
+              id="expDate-year"
+              maxlength="2"
+              placeholder="YY"
+            >
+ 
+           <input
+             type="text"
+             id="cvc"
+             maxlength="3"
+             placeholder="e.g. 123"
+            >
+          </div>
+          <span class="invalid invalid-date"></span>
+          <span class="invalid invalid-cvc"></span>
+        </div>
+
+        <button role="submit" type="submit" id="submit">Confirm</button>
+      </form>
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js" type="module"></script>
+</body>
+</html>
